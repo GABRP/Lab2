@@ -1,14 +1,14 @@
-
 package br.newtonpaiva.dominio;
 
 import java.util.Objects;
 
 public class Conta {
+
     private Integer numero;
     private Double saldo;
 
     public Conta() {
-        this(null);
+        this( null);
     }
 
     public Conta(Integer numero) {
@@ -16,28 +16,33 @@ public class Conta {
     }
 
     public Conta(Integer numero, Double saldo) {
-        this.numero = numero;
-        this.saldo = saldo;
-    }
-    public Double sacar(Double valor) {
-        return 0.0;
+
     }
 
-    public Double depositar(Double valor) {
-        return 0.0;
+    public Double sacar(Double valor) {
         if(valor == null || valor <= 0 )
-            throw new IllegalArgumentException("Valor menor ou");
+            throw new IllegalArgumentException("Valor menor");
 
         saldo += valor;
         return saldo;
     }
 
-    public Integer getNumero() {
-        return numero;
+    public void transferir(Conta destino, Double valor) {
+        if(this.getSaldo() < valor)
+            throw new IllegalArgumentException ("");
+
+        if(this.equals(destino))
+            throw new IllegalArgumentException("");
+
+        this.sacar(valor);
+        destino.depositar(valor);
+    }
+    public Double depositar(Double valor) {
+        return 0.0;
     }
 
-    public void setNumero(Integer numero) {
-        this.numero = numero;
+    public Integer getNumero () {
+        return numero;
     }
 
     public Double getSaldo() {
@@ -60,4 +65,7 @@ public class Conta {
     public int hashCode() {
         return Objects.hash(numero);
     }
+
+
+
 }

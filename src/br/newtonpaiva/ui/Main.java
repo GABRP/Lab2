@@ -4,12 +4,12 @@ import br.newtonpaiva.dominio.Conta;
 
 public class Main {
     public static void main(String[] args) {
-        Conta c = new Conta();
-//        c.setNumero(10);
+        Conta c = new Conta(10);
+        c.setNumero(10);
         c.setSaldo(100.0);
 
         c.depositar(50.0);
-//        c.depositar(-20.0);
+        c.depositar(-20.0);
 
         Conta c2 = new Conta();
         c2.setNumero(10);
