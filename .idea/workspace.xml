@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="577a056c-05d6-45cf-a8a1-304b5a635692" name="Changes" comment="feat: implementa o método depositar">
+    <list default="true" id="577a056c-05d6-45cf-a8a1-304b5a635692" name="Changes" comment="feat: implementa construtores, equals, hashcode e transferir">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/newtonpaiva/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/newtonpaiva/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679171950187</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: implementa construtores, equals, hashcode e transferir">
+      <created>1679172962506</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679172962506</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +102,7 @@
     <MESSAGE value="feat: cria estrutura inicial" />
     <MESSAGE value="feat: cria a classe conta" />
     <MESSAGE value="feat: implementa o método depositar" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa o método depositar" />
+    <MESSAGE value="feat: implementa construtores, equals, hashcode e transferir" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa construtores, equals, hashcode e transferir" />
   </component>
 </project>
