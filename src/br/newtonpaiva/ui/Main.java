@@ -1,7 +1,6 @@
 package br.newtonpaiva.ui;
 
-import br.newtonpaiva.dominio.ContaEspecial;
-import br.newtonpaiva.dominio.conta;
+import br.newtonpaiva.dominio.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +21,18 @@ public class Main {
         }
         System.out.println("você possui " +c.getSaldo()+ " reais de saldo em sua conta");
 
+        //Pessoa p = new Pessoa(){
 
+
+
+        Pessoa pessoas[] = new Pessoa[4];
+        pessoas[0] = new PessoaFisica();
+        pessoas[1] = new PessoaJuridica();
+        pessoas[2] = new PessoaJuridica();
+        pessoas[3] = new PessoaFisica();
+
+
+        for(Pessoa p : pessoas)
+            p.validarDocumento();
     }
 }
